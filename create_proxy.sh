@@ -49,11 +49,11 @@ echo "user.privileged: root" >> /etc/danted.conf
 echo "user.unprivileged: nobody" >> /etc/danted.conf
 echo "user.libwrap: nobody" >> /etc/danted.conf
 echo " client pass {" >> /etc/danted.conf
-echo "        from: 0.0.0.0/0 to: 0.0.0.0/0" >> /etc/danted.conf
+echo "        from: 0.0.0.0/0 to: 192.168.10.5/24" >> /etc/danted.conf
 echo "        log: connect error" >> /etc/danted.conf
 echo "}" >> /etc/danted.conf
 echo "socks pass {" >> /etc/danted.conf
-echo "        from: 0.0.0.0/0 to: 0.0.0.0/0" >> /etc/danted.conf
+echo "        from: 0.0.0.0/0 to: 192.168.10.5/24" >> /etc/danted.conf
 echo "        log: connect error" >> /etc/danted.conf
 echo "}" >> /etc/danted.conf
 

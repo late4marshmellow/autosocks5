@@ -1,3 +1,4 @@
-echo "[6] - Create a user"
-read -p "Enter user name: " userrr < /dev/tty
-read -p "Enter user password: " passss < /dev/tty
+#/bin/bash
+
+read -p "Enter a word: " word
+echo "You entered $word"

@@ -1,4 +1,13 @@
 #/bin/bash
+pause
+read -p "Fresh Installation? y/n: " answer
+if [ "$answer" != "${answer#[Yy]}" ] ;then 
+    echo Yes
+else
+    echo No
+fi
+pause
+exit
 
 echo "[1] - Installing updates"
 apt update && sudo apt upgrade

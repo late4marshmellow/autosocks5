@@ -12,6 +12,7 @@ if [ "$answer" != "${answer#[Yy]}" ] ;then
 
 else
 echo No
+fi
 
 echo "[3] - Getting a network profile"
 read -p "adress to ping?: " pingad
@@ -83,5 +84,5 @@ for ((i = ${port1}; i <= ${port2}; i++))
     do
       echo "${user}:${pass}@$(ip addr show $(ip route | awk '/default/ { print $5 }') | grep "inet" | head -n 1 | awk '/inet/ {print $2}' | cut -d'/' -f1):${i}"
     done
-fi
+
 echo "[10] - DONE!!!"

@@ -1,12 +1,11 @@
 #/bin/bash
-pause
 read -p "Fresh Installation? y/n: " answer
 if [ "$answer" != "${answer#[Yy]}" ] ;then 
     echo Yes
 else
     echo No
 fi
-pause
+read -p "Press 'Enter' to exit"
 exit
 
 echo "[1] - Installing updates"

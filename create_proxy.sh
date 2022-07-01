@@ -13,9 +13,6 @@ if [ "$answer" != "${answer#[Yy]}" ] ;then
 else
 echo No
 
-read -p "Press 'Enter' to exit"
-exit
-
 echo "[3] - Getting a network profile"
 read -p "adress to ping?: " pingad
 read -p "$pingad - is this correct? y/n" answer2

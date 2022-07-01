@@ -1,1 +1,3 @@
-
+echo "[6] - Create a user"
+read -p "Enter user name: " user
+read -p "Enter user password: " pass

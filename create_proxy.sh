@@ -1,11 +1,11 @@
 #/bin/bash
 
 echo "[1] - Installing updates"
-apt update && apt upgrade
+apt update && sudo apt upgrade
 
 echo "[2] - Setting up a proxy server"
-yes | apt install dante-server
-yes | apt install curl
+yes | sudo apt install dante-server
+yes | sudo apt install curl
 
 echo "[3] - Getting a network profile"
 ext_interface () {
